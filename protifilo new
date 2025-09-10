@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sadanand Konapur | AI/ML Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    body { font-family: 'Inter', sans-serif; margin: 0; padding: 0; background: radial-gradient(circle at top left, #1b2735, #090a0f); color: #fff; scroll-behavior: smooth; overflow-x: hidden; }
+
+    /* Animated background gradient */
+    body::before { content: ""; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(270deg, #00d9ff, #2c5364, #ff6ec4, #7873f5); background-size: 800% 800%; animation: gradientShift 20s ease infinite; z-index: -1; opacity: 0.15; }
+    @keyframes gradientShift { 0% {background-position:0% 50%} 50% {background-position:100% 50%} 100% {background-position:0% 50%} }
+
+    header, section { opacity: 0; transform: translateY(30px); transition: opacity 1s ease, transform 1s ease; }
+    header.reveal, section.reveal { opacity: 1; transform: translateY(0); }
+
+    nav { position: fixed; top: 0; width: 100%; display: flex; justify-content: center; background: rgba(0,0,0,0.8); backdrop-filter: blur(10px); z-index: 1000; transition: top 0.3s; }
+    nav a { position: relative; padding: 15px 20px; color: #fff; text-decoration: none; font-weight: 600; transition: color 0.3s; }
+    nav a:hover { color: #00d9ff; }
+    nav a::after { content: ""; position: absolute; width: 0; height: 2px; bottom: 5px; left: 0; background: #00d9ff; transition: width 0.3s ease; }
+    nav a:hover::after { width: 100%; }
+
+    header { text-align: center; padding: 120px 20px 80px; background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1920&q=80') center/cover; }
+    header img { border-radius: 50%; width: 160px; height: 160px; border: 4px solid #00d9ff; box-shadow: 0 0 25px rgba(0,217,255,0.7); animation: float 4s ease-in-out infinite; }
+    @keyframes float { 0%,100%{transform:translateY(0);} 50%{transform:translateY(-10px);} }
+    header h1 { font-size: 2.8rem; margin: 20px 0 10px; }
+    header p { font-size: 1.3rem; color: #00d9ff; }
+    .cursor { animation: blink 0.7s infinite; }
+    @keyframes blink { 50% { opacity: 0; } }
+
+    section { max-width: 1100px; margin: 70px auto; padding: 50px 30px; background: rgba(255,255,255,0.05); border-radius: 16px; box-shadow: 0 0 25px rgba(0,0,0,0.4); transition: transform 0.3s ease; }
+    section:hover { transform: translateY(-5px); }
+    section h2 { font-size: 2.2rem; margin-bottom: 25px; text-align: center; color: #00d9ff; position: relative; }
+    section h2::after { content: ""; width: 60px; height: 3px; background: #00d9ff; display: block; margin: 10px auto 0; border-radius: 2px; }
+
+    .tag-list { display: flex; flex-wrap: wrap; justify-content: center; }
+    .tag { display: inline-block; margin: 10px; padding: 12px 18px; border-radius: 25px; background: #1e2a38; color: #fff; font-weight: 600; transition: transform 0.3s ease, background 0.3s ease; box-shadow: 0 4px 12px rgba(0,0,0,0.4); }
+    .tag:hover { transform: translateY(-6px) scale(1.07); background: #00d9ff; color: #000; }
+
+    .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
+    .card { background: rgba(255,255,255,0.08); border-radius: 14px; padding: 25px; box-shadow: 0 8px 20px rgba(0,0,0,0.4); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-8px); box-shadow: 0 12px 30px rgba(0,217,255,0.4); }
+
+    ul { list-style: none; padding: 0; }
+    li { margin: 15px 0; line-height: 1.6; }
+    img { transition: transform 0.5s ease, box-shadow 0.5s ease; border-radius: 10px; }
+    img:hover { transform: scale(1.05) rotate(1deg); box-shadow: 0 8px 20px rgba(0,217,255,0.4); }
+
+    #contact p { margin: 12px 0; font-size: 1.1rem; }
+    #contact a { color: #00d9ff; text-decoration: none; }
+    #contact a:hover { text-decoration: underline; }
+
+    footer { text-align: center; padding: 25px; margin-top: 50px; background: rgba(0,0,0,0.6); font-size: 0.9rem; color: #ccc; }
+
+    @media(max-width: 768px) { nav { flex-wrap: wrap; } header h1 { font-size: 2.2rem; } section { margin: 40px 15px; padding: 35px 20px; } }
+  </style>
+</head>
+<body>
+  <nav id="navbar">
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#activities">Activities</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <header>
+    <img src="https://media.licdn.com/dms/image/v2/D5603AQE36np53RDmIA/profile-displayphoto-shrink_200_200/B56ZbjgmItH0AY-/0/1747573705583?e=2147483647&v=beta&t=6T_t1-DiegGKtrGKw7cJEnXuLneAV1-dgyiK9HmelyY" alt="Sadanand Konapur">
+    <h1>Sadanand Konapur</h1>
+    <p><span id="typing"></span><span class="cursor">|</span></p>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I am Sadanand Konapur, an enthusiastic undergraduate student pursuing a Bachelor's degree in Artificial Intelligence and Machine Learning at Marri Laxman Reddy Institute of Technology and Management. I am passionate about building intelligent systems using Python, exploring data science, and applying machine learning techniques to solve real-world problems. My interests also extend into web development and participating in tech events that push the boundaries of innovation.</p>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <div class="card-grid">
+        <div class="card">
+          <img src="assests/MLRITM.png" alt="MLRITM Logo" width="80">
+          <h3>Marri Laxman Reddy Institute of Technology and Management</h3>
+          <p>B.Tech in AI & ML<br><em>Expected Graduation: 2027</em></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="tag-list">
+        <span class="tag"><i class="devicon-python-plain"></i> Python</span>
+        <span class="tag"><i class="devicon-java-plain"></i> Java</span>
+        <span class="tag"><i class="devicon-mysql-plain"></i> MySQL</span>
+        <span class="tag"><i class="devicon-mongodb-plain"></i> MongoDB</span>
+        <span class="tag"><i class="devicon-sqlite-plain"></i> SQL</span>
+        <span class="tag"><i class="devicon-vscode-plain"></i> VS Code</span>
+        <span class="tag"><i class="devicon-linux-plain"></i> Cursor IDE</span>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="card-grid">
+        <div class="card">
+          <h3>Heart Stroke Prediction</h3>
+          <p>Built a machine learning model to predict stroke risk using real-world health data.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="activities">
+      <h2>College Activities</h2>
+      <div class="card-grid">
+        <div class="card"><strong>AI & ML Workshop:</strong> Real-time ML applications.</div>
+        <div class="card"><strong>GitHub Workshop:</strong> Version control and collaboration.</div>
+        <div class="card"><strong>LinkedIn Workshop:</strong> Personal branding.</div>
+      </div>
+      <br>
+      <img src="assests/sadanand.webp" alt="event image" width="300" height="300">
+    </section>
+
+    <section id="certifications">
+      <h2>Certifications</h2>
+      <ul>
+        <li><strong>Fundamentals of Java Programming</strong> <a href="https://www.coursera.org/account/accomplishments/verify/FUSTAEQ8RS3" target="_blank">↗️</a></li>
+        <li><strong>MongoDB for Developers</strong> <a href="https://learn.mongodb.com/c/my3mE7hTRB27LmrkEVRjvQ" target="_blank">↗️</a></li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p><i class="fas fa-envelope"></i> <strong>Email:</strong> <a href="mailto:koonapursadanand@gmail.com">koonapursadanand@gmail.com</a></p>
+      <p><i class="fab fa-github"></i> <strong>GitHub:</strong> <a href="https://github.com/sadanandkonapur" target="_blank">github.com/sadanandkonapur</a></p>
+      <p><i class="fab fa-linkedin"></i> <strong>LinkedIn:</strong> <a href="https://linkedin.com/in/sadanand-konapur-53001a260" target="_blank">linkedin.com/in/sadanand-konapur</a></p>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Sadanand Konapur. Built with ❤️ and passion for AI/ML.
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const roles = ["AI/ML Student", "Python Developer", "Tech Explorer"];
+      let roleIndex = 0, charIndex = 0;
+      const typingSpan = document.getElementById("typing");
+
+      function type() {
+        if (charIndex < roles[roleIndex].length) {
+          typingSpan.textContent += roles[roleIndex].charAt(charIndex);
+          charIndex++;
+          setTimeout(type, 100);
+        } else {
+          setTimeout(erase, 1500);
+        }
+      }
+
+      function erase() {
+        if (charIndex > 0) {
+          typingSpan.textContent = roles[roleIndex].substring(0, charIndex - 1);
+          charIndex--;
+          setTimeout(erase, 50);
+        } else {
+          roleIndex = (roleIndex + 1) % roles.length;
+          setTimeout(type, 500);
+        }
+      }
+
+      setTimeout(type, 1000);
+
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('reveal');
+          }
+        });
+      }, { threshold: 0.1 });
+
+      document.querySelectorAll('header, section').forEach(el => observer.observe(el));
+
+      let lastScrollTop = 0;
+      const navbar = document.getElementById('navbar');
+      window.addEventListener('scroll', function () {
+        let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        if (scrollTop > lastScrollTop) {
+          navbar.style.top = "-70px";
+        } else {
+          navbar.style.top = "0";
+        }
+        lastScrollTop = scrollTop;
+      });
+    });
+  </script>
+</body>
+</html>
